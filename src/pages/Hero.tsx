@@ -2,6 +2,11 @@ import { motion } from "framer-motion";
 import { ChevronDown } from "lucide-react";
 import { useEffect, useState } from "react";
 import pic from "../img/546512906_801596355569750_2637909720645892208_n.jpg";
+import TeamSection from "../components/TeamSection";
+import ReviewsSection from "../components/ReviewsSection";
+import Experience from "../components/Experience";
+import Skills from "../components/Skills";
+import TestimonialsSection from "../components/TestimonialsSection";
 
 export default function Hero() {
   // const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
@@ -22,6 +27,7 @@ export default function Hero() {
   };
 
   return (
+    <>
     <section
       id="home"
       className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-gray-900 via-blue-900/20 to-purple-900/20"
@@ -162,6 +168,12 @@ export default function Hero() {
         </motion.div>
       </div>
     </section>
+    <TeamSection/>
+    <ReviewsSection/>
+    <Skills/>
+    <TestimonialsSection/>
+    <Experience/>
+    </>
   );
 }
 
